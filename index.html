@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
 
+    <!-- Font-Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Stylesheet CSS File -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -35,29 +38,30 @@
             </div>
             <div id="converter">
                 <h2>Veuillez saisir la taille par défaut de l'élément parent (taille de base par défaut: 16px): </h2>
-                <span><input type="number" placeholder="16px"> px</span>
+                <div><input type="number" placeholder="16px"> px</div>
     
                 <h2>Entrer une valeur en PX: </h2>
-                <span><input type="number"> px</span>
+                <div><input type="number"> px</div>
                 <!-- <div class="resultToPX"></div>
                 <div class="resultToEM"></div>
                 <div class="resultToPCT"></div> -->
     
                 <h2>Entrer une valeur en EM: </h2>
-                <span><input type="number"> em</span>
+                <div><input type="number"> em</div>
                 <!-- <div class="resultToEM"></div>
                 <div class="resultToPX"></div>
                 <div class="resultToPCT"></div> -->
     
                 <h2>Entrer une valeur en %: </h2>
-                <span><input type="number"> %</span>
+                <div><input type="number"> %</div>
                 <!-- <div class="resultToPCT"></div>
                 <div class="resultToEM"></div>
                 <div class="resultToPX"></div> -->
 
                 <div class="wrapper_action">
-                    <button class="convertValue">Convertir</button>
-                    <button class="resetValue">Effacer</button>
+                    <button class="convertValue">
+                        <i class="fa-solid fa-arrow-right-arrow-left"> <span> Convertir</span></i></button>
+                    <button class="resetValue"><i class="fa-solid fa-eraser"><span> Effacer</span></i></button>
                 </div>
 
                 <div class="wrapper_results">
@@ -251,6 +255,7 @@
         <footer>
             <p>Copyright - Site développé et designé par Romain Luciano - Tous droits réservés</p>
         </footer>
+        <i class="fa-solid fa-circle-arrow-up myBtn"></i>
     </div>
     
 

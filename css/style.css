@@ -75,7 +75,7 @@ main {
   border-bottom: 3px solid black;
 }
 
-#converter span {
+#converter div {
   padding-bottom: 30px;
 }
 
@@ -152,6 +152,21 @@ footer {
   border: 1px solid purple;
 }
 
+i.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 99;
+  font-size: 35px;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Media Queries */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .wrapper_page {
     display: grid;
