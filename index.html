@@ -16,184 +16,243 @@
 </head>
 
 <body>
-    <header>
-        <h1>Convertisseur Unités CSS</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#converter">Convertisseur</a></li>
-            <li><a href="#tableConverter">Table de conversion</a></li>
-            <li><a href="#definitions">Définitions</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div id="home">
-            <h2>Bienvenu sur le convertisseur d'unités de mesure CSS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis quas numquam quos. Ducimus exercitationem, obcaecati quis nisi modi blanditiis aspernatur eum! Esse porro rem neque dolores minima laboriosam officia iusto expedita! Nulla commodi magnam doloribus perspiciatis nisi quod iste illo harum quidem laudantium nihil quo, facilis, deserunt veniam molestiae quam accusantium, laboriosam consectetur ipsam suscipit. Omnis voluptatibus dolorem consectetur molestiae odio. Explicabo mollitia, beatae quos repellat iure sequi alias, deserunt laudantium veniam molestiae suscipit maiores dicta nulla minus sint. Numquam aspernatur quidem quam sit at excepturi dolorum ut iure explicabo quod minus repellendus laborum commodi expedita harum voluptas, facere eius totam. Inventore aliquam nostrum doloremque, commodi obcaecati dolores quidem! Recusandae nobis perferendis voluptates vero ut facilis harum, nemo accusantium blanditiis velit enim quasi, excepturi voluptatibus delectus neque? Laborum quibusdam accusantium omnis obcaecati autem doloribus dolor ex repellat veniam est ut blanditiis at, suscipit dolores assumenda cumque exercitationem nulla libero totam esse fuga, consequuntur aliquid. Aliquid, doloribus voluptates. Laudantium, perspiciatis facilis doloribus facere pariatur expedita velit aperiam vitae laboriosam incidunt, consectetur est, itaque dolores ratione et praesentium laborum nesciunt repudiandae soluta labore delectus temporibus modi reiciendis iusto? Tenetur veniam, reprehenderit odio dolores consequuntur quo perferendis, laboriosam consectetur perspiciatis facilis iure?</p>
-        </div>
-        <div id="converter">
-            <h2>Veuillez saisir la taille par défaut de l'élément parent (mesure par défaut: 16px): </h2>
-            <input type="number" placeholder="16px">
-            <span>px</span>
+    <div class="wrapper_page">
+        <header>
+            <h1>Convertisseur Unités CSS</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#converter">Convertisseur</a></li>
+                <li><a href="#tableConverter">Table de conversion</a></li>
+                <li><a href="#definitions">Définitions</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="home">
+                <h2>Bienvenu sur le convertisseur d'unités de mesure CSS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis quas numquam quos. Ducimus exercitationem, obcaecati quis nisi modi blanditiis aspernatur eum! Esse porro rem neque dolores minima laboriosam officia iusto expedita! Nulla commodi magnam doloribus perspiciatis nisi quod iste illo harum quidem laudantium nihil quo, facilis, deserunt veniam molestiae quam accusantium, laboriosam consectetur ipsam suscipit. Omnis voluptatibus dolorem consectetur molestiae odio. Explicabo mollitia, beatae quos repellat iure sequi alias, deserunt laudantium veniam molestiae suscipit maiores dicta nulla minus sint. Numquam aspernatur quidem quam sit at excepturi dolorum ut iure explicabo quod minus repellendus laborum commodi expedita harum voluptas, facere eius totam. Inventore aliquam nostrum doloremque, commodi obcaecati dolores quidem! Recusandae nobis perferendis voluptates vero ut facilis harum, nemo accusantium blanditiis velit enim quasi, excepturi voluptatibus delectus neque? Laborum quibusdam accusantium omnis obcaecati autem doloribus dolor ex repellat veniam est ut blanditiis at, suscipit dolores assumenda cumque exercitationem nulla libero totam esse fuga, consequuntur aliquid. Aliquid, doloribus voluptates. Laudantium, perspiciatis facilis doloribus facere pariatur expedita velit aperiam vitae laboriosam incidunt, consectetur est, itaque dolores ratione et praesentium laborum nesciunt repudiandae soluta labore delectus temporibus modi reiciendis iusto? Tenetur veniam, reprehenderit odio dolores consequuntur quo perferendis, laboriosam consectetur perspiciatis facilis iure?</p>
+            </div>
+            <div id="converter">
+                <h2>Veuillez saisir la taille par défaut de l'élément parent (taille de base par défaut: 16px): </h2>
+                <span><input type="number" placeholder="16px"> px</span>
+    
+                <h2>Entrer une valeur en PX: </h2>
+                <span><input type="number"> px</span>
+                <!-- <div class="resultToPX"></div>
+                <div class="resultToEM"></div>
+                <div class="resultToPCT"></div> -->
+    
+                <h2>Entrer une valeur en EM: </h2>
+                <span><input type="number"> em</span>
+                <!-- <div class="resultToEM"></div>
+                <div class="resultToPX"></div>
+                <div class="resultToPCT"></div> -->
+    
+                <h2>Entrer une valeur en %: </h2>
+                <span><input type="number"> %</span>
+                <!-- <div class="resultToPCT"></div>
+                <div class="resultToEM"></div>
+                <div class="resultToPX"></div> -->
 
-            <h2>Entrer une valeur en PX: </h2>
-            <input type="number">
-            <span>px</span>
-            <div class="resultToPX"></div>
-            <div class="resultToEM"></div>
-            <div class="resultToPCT"></div>
+                <div class="wrapper_action">
+                    <button class="convertValue">Convertir</button>
+                    <button class="resetValue">Effacer</button>
+                </div>
 
-            <h2>Entrer une valeur en EM: </h2>
-            <input type="number">
-            <span>em</span>
-            <div class="resultToEM"></div>
-            <div class="resultToPX"></div>
-            <div class="resultToPCT"></div>
-
-            <h2>Entrer une valeur en %: </h2>
-            <input type="number">
-            <span>%</span>
-            <div class="resultToPCT"></div>
-            <div class="resultToEM"></div>
-            <div class="resultToPX"></div>
-        </div>
-        <div id="tableConverter">
-            <h2>Table de conversion</h2>
-            <p>Dans la table ci-dessous, sélectionner une taille par défaut de l'élément parent en pixels (px) pour afficher le tableau de conversion complet.</p>
-            <p>Information: La taille par défaut est généralement de 16px.</p>
-            <div class="tableWrapper">
-                <div class="tableTitle">
-                    <p>px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
-                </div>
-                <div class="tableLine">
-                    <p>5px</p>
-                    <p>em</p>
-                    <p>pourcent</p>
+                <div class="wrapper_results">
+                    <h2>Vos résultats:</h2>
+                    <div class="resultToPX">Coucou</div>
+                    <div class="resultToEM">Coucou</div>
+                    <div class="resultToPCT">Coucou</div>
                 </div>
             </div>
-        </div>
-        <div id="definitions">
-            <h2>Definitions de termes:</h2>
-            <div class="defPX">
-                <h3>Pixel:</h3>
-                <article>
-                    Le pixel est une unité de longueur qui correspond approximativement à la largeur ou à la hauteur d'un point unique qui peut être vu confortablement par l'œil humain sans effort mais par ailleurs aussi petit que possible.
-                </article>
-                <article>
-                    <h4>Passer d'une valeur en PX à une valeur en EM (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
-                    <ul>
-                        <li>Formule: taille de l'élément en pixels / taille du parent en pixels</li>
-                        <li>Exemple: 12px / 16px = 0.75em</li>
-                    </ul> 
-                </article>
-                <article> 
-                    <h4>Passer d'une valeur en PX à une valeur en % (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
-                    <ul>
-                        <li>Formule: (taille de l'élément en pixels / taille du parent en pixels) x 100</li>
-                        <li>Exemple: (12px / 16px) x 100 = 75%</li>
-                    </ul>
-                </article>
+            <div id="tableConverter">
+                <h2>Table de conversion</h2>
+                <p>Dans la table ci-dessous, sélectionner une taille par défaut de l'élément parent en pixels (px) pour afficher le tableau de conversion complet.</p>
+                <p>Information: La taille par défaut est généralement de 16px.</p>
+                <div class="tableWrapper">
+                    <div class="tableTitle">
+                        <p>px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>5px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>6px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>7px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>8px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>9px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>10px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>11px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>12px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>13px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>14px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>15px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>16px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>17px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>18px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>19px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>20px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>21px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>22px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>23px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>24px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                    <div class="tableLine">
+                        <p>25px</p>
+                        <p>em</p>
+                        <p>pourcent</p>
+                    </div>
+                </div>
             </div>
-            <div class="defEM">
-                <h3>Em:</h3>
-                <article>
-                    Un em est une unité de mesure de longueur des espaces. C'est une unité utilisée dans les feuilles de style en cascade (CSS) qui est proportionnelle à la taille de la police présente dans le bloc correspondant à la déclaration du style.
-                </article>
-                <article>
-                    <h4>Passer d'une valeur en EM à une valeur en PX (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
-                    <ul>
-                        <li>Formule: taille de l'élément en EMs x taille du parent en pixels</li>
-                        <li>Exemple: 0.75em x 16px = 12px</li>
-                    </ul>
-                </article>
-                <article> 
-                    <h4>Passer d'une valeur en EM à une valeur en % (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
-                    <ul>
-                        <li>Formule: taille de l'élément en EMs x 100</li>
-                        <li>Exemple: 0.75em x 100 = 75%</li>
-                    </ul>
-                </article>
+            <div id="definitions">
+                <h2>Definitions de termes:</h2>
+                <div class="defPX">
+                    <h3>Pixel:</h3>
+                    <article>
+                        Le pixel est une unité de longueur qui correspond approximativement à la largeur ou à la hauteur d'un point unique qui peut être vu confortablement par l'œil humain sans effort mais par ailleurs aussi petit que possible.
+                    </article>
+                    <article>
+                        <h4>Passer d'une valeur en PX à une valeur en EM (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
+                        <ul>
+                            <li>Formule: taille de l'élément en pixels / taille du parent en pixels</li>
+                            <li>Exemple: 12px / 16px = 0.75em</li>
+                        </ul> 
+                    </article>
+                    <article> 
+                        <h4>Passer d'une valeur en PX à une valeur en % (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
+                        <ul>
+                            <li>Formule: (taille de l'élément en pixels / taille du parent en pixels) x 100</li>
+                            <li>Exemple: (12px / 16px) x 100 = 75%</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="defEM">
+                    <h3>Em:</h3>
+                    <article>
+                        Un em est une unité de mesure de longueur des espaces. C'est une unité utilisée dans les feuilles de style en cascade (CSS) qui est proportionnelle à la taille de la police présente dans le bloc correspondant à la déclaration du style.
+                    </article>
+                    <article>
+                        <h4>Passer d'une valeur en EM à une valeur en PX (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
+                        <ul>
+                            <li>Formule: taille de l'élément en EMs x taille du parent en pixels</li>
+                            <li>Exemple: 0.75em x 16px = 12px</li>
+                        </ul>
+                    </article>
+                    <article> 
+                        <h4>Passer d'une valeur en EM à une valeur en % (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
+                        <ul>
+                            <li>Formule: taille de l'élément en EMs x 100</li>
+                            <li>Exemple: 0.75em x 100 = 75%</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="defPourcent">
+                    <h3>Pourcent:</h3>
+                    <article>
+                        Les valeurs exprimées en pourcentages sont relatives à d'autres quantités (une longueur par exemple). Chaque propriété qui permet d'utiliser un pourcentage définit également la quantité à laquelle se réfère ce pourcentage. Cette quantité peut être une valeur d'une autre propriété du même élément, la valeur de la propriété sur un élément ancêtre, une caractéristique du bloc englobant ou autre chose.
+                    </article>
+                    <article> 
+                        <h4>Passer d'une valeur en % à une valeur en PX (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
+                        <ul>
+                            <li>Formule: (pourcentage x taille du parent en PX) / 100%</li>
+                            <li>Exemple: (93.75% x 16px) / 100% = 15px</li>
+                        </ul>
+                    </article>
+                    <article> 
+                        <h4>Passer d'une valeur en % à une valeur en EM (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
+                        <ul>
+                            <li>Formule: pourcentage / 100</li>
+                            <li>Exemple: 93.75% / 100 = 0.9375em</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="defPourcent">
-                <h3>Pourcent:</h3>
-                <article>
-                    Les valeurs exprimées en pourcentages sont relatives à d'autres quantités (une longueur par exemple). Chaque propriété qui permet d'utiliser un pourcentage définit également la quantité à laquelle se réfère ce pourcentage. Cette quantité peut être une valeur d'une autre propriété du même élément, la valeur de la propriété sur un élément ancêtre, une caractéristique du bloc englobant ou autre chose.
-                </article>
-                <article> 
-                    <h4>Passer d'une valeur en % à une valeur en PX (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
-                    <ul>
-                        <li>Formule: (pourcentage x taille du parent en PX) / 100%</li>
-                        <li>Exemple: (93.75% x 16px) / 100% = 15px</li>
-                    </ul>
-                </article>
-                <article> 
-                    <h4>Passer d'une valeur en % à une valeur en EM (pour une valeur de font-size par défaut à 16px / 100% / 1.0000em):</h4>
-                    <ul>
-                        <li>Formule: pourcentage / 100</li>
-                        <li>Exemple: 93.75% / 100 = 0.9375em</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </main>
+        </main>
+        <footer>
+            <p>Copyright - Site développé et designé par Romain Luciano - Tous droits réservés</p>
+        </footer>
+    </div>
+    
 
     <script src="./js/script.js"></script>
 </body>
